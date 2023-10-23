@@ -11,6 +11,31 @@
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+      <Content Remove="obj\**" />
+      <Content Include="bin\Debug\net7.0\appsettings.Development.json" />
+      <Content Include="bin\Debug\net7.0\appsettings.json" />
+      <Content Include="bin\Debug\net7.0\BookstoreMVC.deps.json" />
+      <Content Include="bin\Debug\net7.0\BookstoreMVC.dll" />
+      <Content Include="bin\Debug\net7.0\BookstoreMVC.exe" />
+      <Content Include="bin\Debug\net7.0\BookstoreMVC.pdb" />
+      <Content Include="bin\Debug\net7.0\BookstoreMVC.runtimeconfig.json" />
+      <Content Include="bin\Debug\net7.0\BookstoreMVC.staticwebassets.runtime.json" />
+      <Content Remove="bin\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="obj\**" />
+      <Compile Remove="bin\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="obj\**" />
+      <EmbeddedResource Remove="bin\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="obj\**" />
+      <None Remove="bin\**" />
     </ItemGroup>
 
 </Project>
